@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #eeb96a;
+}
+
+header {
+    font-size: 2rem;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+header, form {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    font-family: 'Patrick Hand SC', cursive;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+.todo-submit {
+    background-color: white;
+    color: #FF9700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+form button:hover {
+    background-color: #FF9700;
+    color: white;
+}
+
+.todo-input {
+    width: 50vw;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    background-color: white;
+    list-style: none;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 2rem;
+    margin: 1vh;
+    height: 5vh;
+    display: flex;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 50vw;
+}
+
+.todo li {
+    flex:1;
+    padding-left: 0.5rem;
+}
+
+.todo button {
+    width: 42px;
+    border: none;
+}
+
+.todo-done {
+    color: white;
+    background-color: #0AE547;
+    transition: all, 0.25s, ease;
+    font-size: 1.5rem;
+}
+
+.todo-done:hover, .todo-delete:hover, .fa-pencil {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.todo-delete {
+    color: white;
+    background-color: #FF6D59;
+    transition: all, 0.25s, ease;
+    font-size: 1.5rem;
+}
+
+.completed {
+    background-color: rgb(169, 169, 169);
+    text-decoration:line-through;
+}
+
+.completed .todo-done {
+    background-color: #005e1b;
+}
+
+
+.endMsg{
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-thumbs-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.fa-pencil {
+    font-size: 1.5rem;
+}
+
+
+.username {
+    background-color: #eeb96a;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 4rem;
+    width: 7ch;
+    border: none;
+    font-weight: bolder;
+}
